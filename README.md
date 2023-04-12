@@ -2,6 +2,7 @@
 ## bootcamp module 6 challenge
 
 
+
 ### Note:
 The WeatherPy notebook used the citipy module. However, I had difficulty with this module and also wanted additional features that it did not have.
 I copied it and made a citipy2 module that is in the main project folder. My notebook uses this module instead.
@@ -17,7 +18,7 @@ mycoord = citipy2.get_coordinates('eugene')
 
 print(mycoord)
 
-> ('-123.0855556', '44.0522222')
+> ('44.0522222', '-123.0855556')
 
 mycity = citipy2.nearest_city(44, -123.1)
 
