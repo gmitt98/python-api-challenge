@@ -9,6 +9,7 @@ I copied it and made a citipy2 module that is in the main project folder. My not
 I also copied the unit testing file for the original module and updated it to demonstrate that this works.
 The module is documented and there is a longer explanation in the note for my notebook code.
 
+Caution: the .get_coordinates attribute will only grab the first value in the list for a city name. There are cities that share names.
 
 ### Example of citipy2 in use:
 
