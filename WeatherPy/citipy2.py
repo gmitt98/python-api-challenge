@@ -1,4 +1,4 @@
-# updated citipy to have coordinates as part of the object
+# updated original citipy module to have coordinates as part of the object. new code is mentioned in comments.
 # also included a function to give coordinates for a given city name
 # this function takes the first city by the name that it finds in the csv data
 
