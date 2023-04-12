@@ -1,7 +1,8 @@
 # python-api-challenge
 ## bootcamp module 6 challenge
 
-
+The main folder for this project is WeatherPy, which contains the two notebooks used. API keys are not tracked on Github.
+The folder output_data contains the city data called from the weather API and the resulting charts requested.
 
 ### Note:
 The WeatherPy notebook used the citipy module. However, I had difficulty with this module and also wanted additional features that it did not have.
