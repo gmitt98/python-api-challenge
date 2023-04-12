@@ -11,10 +11,20 @@ The module is documented and there is a longer explanation in the note for my no
 
 ### Example of citipy2 in use:
 
-import citipy2 /n
-mycoord = citipy2.get_coordinates('eugene') /n
+import citipy2
+
+mycoord = citipy2.get_coordinates('eugene')
+
+print(mycoord)
+
+> ('-123.0855556', '44.0522222')
+
 mycity = citipy2.nearest_city(44, -123.1)
+
 print(mycity)
-<citipy2.City object at 0x1092c9690>
+
+> <citipy2.City object at 0x1092c9690>
+
 print(mycity.city_name, mycity.country_code, mycity.city_lat, mycity.city_long)
-eugene us 44.0522222 -123.0855556
+
+> eugene us 44.0522222 -123.0855556
