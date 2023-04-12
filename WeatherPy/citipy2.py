@@ -1,3 +1,7 @@
+# updated citipy to have coordinates as part of the object
+# also included a function to give coordinates for a given city name
+# this function takes the first city by the name that it finds in the csv data
+
 import csv
 import kdtree
 import os
@@ -16,7 +20,7 @@ class City:
         self.city_long = city_long
     # NEW: ability to return coordinates
     def get_coordinates(self):
-        return(self.city_long, self.city_lat)
+        return(self.city_lat, self.city_long)
 
 
 # load the city data up
@@ -43,7 +47,8 @@ def nearest_city(latitude, longitude):
     nearest_city_coordinate = _world_cities_kdtree.search_nn((latitude, longitude, ))
     return WORLD_CITIES_DICT[nearest_city_coordinate[0].data]
 
-# NEW: ability to return coordinates
+# NEW: ability to return coordinates from a name input - takes the first name it finds
+# Use caution in case of duplicates
 def get_coordinates(city_name):
     for coordinate_key, city in WORLD_CITIES_DICT.items():
         if city.city_name == city_name:
